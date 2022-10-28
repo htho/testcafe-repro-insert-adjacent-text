@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="insert-text">insert text</button>
+    <button id="insert-number">insert number</button>
+    <div id="target"></div>
+</body>
+<script>
+    const insertText = document.getElementById("insert-text");
+    const insertNumber = document.getElementById("insert-number");
+    const target = document.getElementById("target");
+    let ctr = 0;
+    insertText.addEventListener("click", () => {
+        target.insertAdjacentText("beforeend", ++ctr + "");
+    });
+    insertNumber.addEventListener("click", () => {
+        target.insertAdjacentText("beforeend", ++ctr);
+    });
+</script>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "repro-testcafe-insert-adjacent-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome test.tc.ts",
+    "serve": "serve public"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.0.1",
+    "testcafe": "^2.0.1"
+  }
+}
